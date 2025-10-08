@@ -1,0 +1,36 @@
+GET http://localhost:8000/
+
+###
+
+GET http://localhost:8000/tasks
+
+###
+
+GET http://localhost:8000/tasks/1
+
+###
+
+
+POST http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+    "title": "Abacate",
+    "status": "PENDENTE"
+}
+
+###
+
+DELETE http://localhost:8000/tasks/abc123
+Content-Type: application/json
+
+
+###
+
+PUT http://localhost:8000/tasks/2
+Content-Type: application/json
+
+{
+    "title": "Bomboclat",
+    "status": "DONE"
+}
